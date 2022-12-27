@@ -51,7 +51,7 @@ const App = () => {
 
     <div className="container-fluid app_wrapper">
       {/* <Header /> */}
-      <PokemonList pokemons={currentPosts} />
+      <PokemonList pokemons={currentPosts} setPokemons={setPokemons} />
       <Pagination postsPerPage={postsPerPage} totalPosts={pokemons.length} paginate={paginate} />
       {/* <Footer /> */}
     </div>

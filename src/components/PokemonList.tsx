@@ -1,13 +1,22 @@
-import Pokemon from './Pokemon'
+import Pokemon from './Pokemon';
 
-const PokemonList = ({ pokemons }: any) => {
+const PokemonList = ({ pokemons, setPokemons }: any) => {
+
+    const handleDelete = (id: number) => {
+        if (window.confirm('Delete Item')) {
+            setPokemons(() => pokemons.filter((pokemon: any) => pokemon.id !== id))
+        }
+    }
+
+
+
     return (
         <>
             <div className="container pokemon_list">
                 <div className="row">
                     {
                         pokemons.map((pokemon: any, i: any) => (
-                            <Pokemon key={i} pokemon={pokemon} />
+                            <Pokemon key={i} pokemon={pokemon} handleDelete={handleDelete} />
                         ))
                     }
                 </div>

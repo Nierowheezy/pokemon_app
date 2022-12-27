@@ -1,12 +1,8 @@
 import { Link } from 'react-router-dom';
 
-const Pokemon = ({ pokemon }: any) => {
+const Pokemon = ({ pokemon, handleDelete }: any) => {
 
-    const handleDelete = () => {
-        if (window.confirm('Delete Item')) {
-            console.log("Delete");
-        }
-    }
+
 
     return (
         <div className="col-sm-3 pokemon">
@@ -26,9 +22,14 @@ const Pokemon = ({ pokemon }: any) => {
                                 Details
                             </Link>
                         </span>
-                        <span className="badge rounded-pill bg-primary" style={{ marginLeft: '1rem', cursor: 'pointer' }} onClick={handleDelete}>
+                        {/* <span className="badge rounded-pill bg-primary" style={{ marginLeft: '1rem', cursor: 'pointer' }} onClick={ }>
                             Delete
-                        </span>
+                        </span> */}
+                        <button className="badge rounded-pill bg-primary" style={{ marginLeft: '1rem', cursor: 'pointer', border: '0' }}
+                            onClick={() => handleDelete(pokemon.id)}
+                        >
+                            Delete
+                        </button>
                     </li>
 
                 </ul>
