@@ -1,0 +1,93 @@
+.app_wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #3db7b0a4 !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-weight: bold;
+  color: aliceblue;
+  font-size: 22px;
+}
+
+.pokemon {
+  margin-bottom: 40px;
+}
+
+.pokemon .card .center_img {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon .card .center_img img {
+  max-width: 50%;
+}
+
+.pokemon_list {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.card .card-body h5 {
+  text-align: center;
+  text-transform: capitalize;
+  color: #32ab9f;
+  transition: all .5s;
+}
+
+.card .card-body h5:hover {
+  opacity: .6;
+}
+
+.card .list-group {
+  text-align: center;
+}
+
+.card_single_container {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.card_single_container .img_single {
+  display: flex;
+  justify-content: center;
+}
+
+.card_single_container .img_single img {
+  max-width: 50%;
+}
+
+.card_single {
+  width: 25rem;
+}
+
+.badge {
+  transition: all 1s;
+  background-image: linear-gradient(to right, #46e1cc, #83d7dd) !important;
+}
+
+.badge:hover {
+  background-image: linear-gradient(to right, #34beac, #46979c) !important;
+}
+
+.badge a {
+  color: aliceblue;
+  padding: 5px !important;
+}
+
+
+
+.navigation_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  color: #35bcaf;
+
+}
