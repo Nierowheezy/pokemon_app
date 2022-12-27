@@ -36,8 +36,6 @@ const PokemonDetails = ({ match }: any) => {
     </>
   });
 
-  console.log();
-
 
   return (
     <div className="app-container">
@@ -53,7 +51,7 @@ const PokemonDetails = ({ match }: any) => {
 
           <div className="card-body">
             <h5 className="card-title">Abilities : {renderAbility()}</h5>
-            <h5 className="card-title">Moves : {moves[0].move.name}, {moves[1].move.name}</h5>
+            <h5 className="card-title">Moves : {moves[0]?.move?.name}, {moves[1]?.move?.name}</h5>
           </div>
 
 
