@@ -2,6 +2,9 @@ import Pokemon from './Pokemon';
 
 const PokemonList = ({ pokemons, setPokemons }: any) => {
 
+
+    // console.log(pokemons);
+
     const handleDelete = (id: number) => {
         if (window.confirm('Delete Item')) {
             setPokemons(() => pokemons.filter((pokemon: any) => pokemon.id !== id))
